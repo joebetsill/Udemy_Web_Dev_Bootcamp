@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Exercise</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Register</h1>
+
+        <form action="">
+            
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text" name="fname" placeholder="John" required>
+
+            <label for="lname">Last Name:</label>
+            <input id="lname" type="text" name="lname" placeholder="Smith" required>
+
+            <br>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="your@email.com" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="5" maxlength="10" required>
+
+            <br>
+
+            <label for="birthMonth">Birthday:</label>
+            <select name="birthMonth" id="birthMonth">
+                <option value="" disabled selected hidden>Month</option>
+                <option value="Jan">January</option>
+                <option value="Feb">Feburary</option>
+                <option value="Mar">March</option>
+            </select>
+
+            <select name="birthDay" id="birthDay">
+                <option value="" disabled selected hidden>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <select name="birthYear" id="birthYear">
+                <option value="" disabled selected hidden>Year</option>
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+            </select>
+
+            <br>
+
+            <label for="checkbox">I agree to the terms and conditions. </label>
+            <input type="checkbox" id="checkbox" name="terms" value="agree" required>
+
+            <br>
+
+            <button>Submit</button>
+
+        </form>
+    
+    </body>
+</html>
